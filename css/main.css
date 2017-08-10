@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Regular.eot);
+    src: url(../fonts/Raleway-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/Raleway-Regular.woff) format('woff'), url(../fonts/Raleway-Regular.ttf) format('truetype'), url(../fonts/Raleway-Regular.svg#Raleway-Regular) format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.eot);
+    src: url(../fonts/Roboto-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/Roboto-Regular.woff) format('woff'), url(../fonts/Roboto-Regular.ttf) format('truetype'), url(../fonts/Roboto-Regular.svg#Roboto-Regular) format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.logo_description:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    width: 290px;
+    height: 93px;
+    background-image: url("../images/logo.png");
+}
+
+.logo_description {
+    position: relative;
+    padding-top: 75px;
+    color: #fefefe;
+    font-family: Raleway;
+    font-size: 14px;
+    white-space: nowrap;
+}
+body {
+    padding-top: 30px;
+}
+.right_block {
+    text-align: right;
+}
+.header_background {
+    position: absolute;
+    content: "";
+    width: 1920px;
+    height: 217px;
+    margin-left: -960px;
+    left: 50%;
+    background-image: url("../images/header_back.jpg");
+}
+.wrap{
+        position: relative;
+        width: 100%;
+        height: 217px;
+        margin-bottom: -200px;
+        overflow-x: hidden;
+        margin-top: -30px;
+}
+.phone a {
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+    position: relative;
+}
+.address {
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.phone a:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    background-image: url("../images/phone.png");
+    left: -39px;
+    top: 7px;
+}
+.address span.text:before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/mark.png");
+    width: 11px;
+    height: 15px;
+    background-repeat: no-repeat;
+    left: -20px;
+    top: 2px;
+}
+.address span.text {
+    position: relative;
+}
+
+.phone {
+    margin-bottom: 2px;
+}
+@media all and (max-width:991px){
+.phone {
+    margin-bottom: 5px;
+}
+}
+
+
+.phone a:hover {
+    color: white;
+    text-decoration: none;
+}
+div#main_menu a {
+    color: white;
+    font-family: Raleway;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#main_menu a.active {
+    text-decoration: none;
+    position: relative;
+}
+
+#main_menu a.active:before {
+    position: absolute;
+    content: "";
+    background-color: #E31E24;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    z-index: 0;
+}
+
+div#main_menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media all and (max-width:991px){
+    .logo_description{
+        display:block;
+        float:none;
+        margin:0 auto;
+        width:289px;
+        margin-bottom: 7px;
+    }
+}
+@media all and (max-width:991px){
+    .right_block{
+       text-align:center;
+    }
+}
+@media all and (max-width:991px){
+    .phone a{
+        font-size: 25px;
+        margin-left:35px;
+    }
+}
+@media all and (max-width:991px){
+    .address{
+        margin-left:15px;
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width:991px){
+    .left_block{
+        padding-left: 17px!important;
+    }
+}
+@media all and (max-width:991px){
+    #main_menu a{
+        color:black!important;
+    }
+}
+nav.navbar.navbar-default {
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float: none;
+    background-color: transparent;
+    border: none;
+}
+ul#sub_menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#sub_menu li {display: inline-block;color: #218AAF;z-index: 1;cursor: pointer;}
+.none{
+    display: none!important;
+}
+.box {
+    height: 95px;
+    width: 190px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 20px;
+    color: #218aaf;
+    font-family: Raleway;
+    font-size: 16px;
+    border-bottom: 5px solid #E31E24;
+    position: relative;
+}
+.box img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.right_block {
+    margin-bottom: 25px;
+}
+.box.active {
+    background-color: #E31E24;
+    color:white;
+}
+.box span{
+    position: relative;
+}
+.box span:after {
+    position: absolute;
+    content: "";
+    background-image: url("../images/arr_down.png");
+    width: 12px;
+    height: 10px;
+    left: 50%;
+    margin-left: -5px;
+    bottom: -9px;
+    z-index: 1;
+}
+#sub_menu li ul {
+    cursor: default;
+    margin-top: 12px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* margin-left: 10px; */
+    padding: 0 10px;
+    display: inline-table;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-top: 20px;
+    border-top: 4px solid #e31e24;
+    padding-bottom: 20px;
+    text-align: left;
+}
+#sub_menu li ul li {
+    color: #218aaf;
+    font-family: Raleway;
+    font-size: 16px;
+    padding: 0 168px;
+    line-height: 30px;
+} 
+.box:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 130px;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+.center{
+    text-align: center;
+}
+.block_wrap{
+    display: flex;
+    justify-content: center;
+}
+@media all and (min-width:1200px){
+    .block_wrap{
+    display: block;
+}
+}
+@media all and (min-width:1200px){
+    ul#sub_menu{
+    justify-content:space-between;
+}
+}
+@media all and (max-width:1199px){
+    #sub_menu li ul li{
+    padding: 0 130px;
+}
+}
+@media all and (max-width:991px){
+    ul#sub_menu{
+    display:none;
+}
+}
+@media all and (max-width:991px){
+    div#main_menu{
+    display:none;
+}
+}
